@@ -1,12 +1,3 @@
-/* ROOT */
-:root {
-  --font-static: 'Public Sans', "Arial", sans-serif;
-  --font-heading: 'Ibarra Real Nova', 'Arial', serif;
-  --font-footer-color: #33323d;
-  --link-color: #203a4c;
-  --link-hovered: #5fb4a2;
-}
-
 /* FONTS */
 @font-face {
   font-family: 'Public Sans';
@@ -59,9 +50,9 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: var(--font-static);
+  font-family: "Public Sans", "Arial", sans-serif;
   background-color: #fff;
-  color: var(--font-footer-color);
+  color: #33323d;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -144,7 +135,7 @@ main {
   visibility: hidden;
   -webkit-transform: translateX(550px);
           transform: translateX(550px);
-  background-color: var(--font-footer-color);
+  background-color: #33323d;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -203,11 +194,11 @@ main {
 }
 
 .navigation__link--active .navigation__link {
-  color: var(--link-hovered);
+  color: #5fb4a2;
 }
 
 .navigation__link:hover {
-  color: var(--link-hovered);
+  color: #5fb4a2;
 }
 
 .navigation__link:active {
@@ -255,7 +246,7 @@ main {
     margin-bottom: 0;
   }
   .navigation__link {
-    color: var(--font-footer-color);
+    color: #33323d;
   }
 }
 

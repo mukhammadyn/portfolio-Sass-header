@@ -1,14 +1,9 @@
-/* ROOT */
-:root {
-  --font-static: 'Public Sans', "Arial", sans-serif;
-  --font-heading: 'Ibarra Real Nova', 'Arial', serif;
-  --font-footer-color: #33323d;
-  --link-color: #203a4c;
 
-  --link-hovered: #5fb4a2;
-}
+$font-static: 'Public Sans', "Arial", sans-serif;
+$font-footer-color: #33323d;
+$link-hovered: #5fb4a2;
 
-@mixin listunstyle {
+@mixin listunstyled {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -63,9 +58,9 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: var(--font-static);
+  font-family: $font-static;
   background-color: #fff;
-  color: var(--font-footer-color);
+  color: $font-footer-color;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -143,7 +138,7 @@ main {
   padding-bottom: 40px;
   visibility: hidden;
   transform: translateX(550px);
-  background-color: var(--font-footer-color);
+  background-color: $font-footer-color;
   transition: transform 0.3s ease;
 }
 
@@ -168,7 +163,7 @@ main {
 }
 
 .navigation__list {
-  @include listunstyle;
+  @include listunstyled;
 }
 
 .navigation__item  {
@@ -197,13 +192,13 @@ main {
 }
 
 .navigation__link--active .navigation__link {
-  color: var(--link-hovered);
+  color: $link-hovered;
 }
 
 .navigation__link {
   
   &:hover {
-    color: var(--link-hovered);
+    color: $link-hovered;
   }
 
   &:active {
@@ -245,7 +240,7 @@ main {
 
   .navigation__list {
     display: flex;
-    @include listunstyle;
+    @include listunstyled;
   }
 
   .navigation__item  {
@@ -260,7 +255,7 @@ main {
   
 
   .navigation__link {
-    color: var(--font-footer-color);
+    color: $font-footer-color;
   }
 }
 
